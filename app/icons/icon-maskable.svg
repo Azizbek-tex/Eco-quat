@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1d2a6b"/>
+      <stop offset=".55" stop-color="#0d1440"/>
+      <stop offset="1" stop-color="#060a24"/>
+    </linearGradient>
+    <radialGradient id="halo" cx=".5" cy=".46" r=".5">
+      <stop offset="0" stop-color="#ffb02e" stop-opacity=".55"/>
+      <stop offset=".45" stop-color="#ff8a1f" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#ff8a1f" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="leaf" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#10b981"/>
+      <stop offset=".55" stop-color="#34d399"/>
+      <stop offset="1" stop-color="#a3e635"/>
+    </linearGradient>
+    <linearGradient id="bolt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff6c2"/>
+      <stop offset=".35" stop-color="#ffd84a"/>
+      <stop offset="1" stop-color="#ff8a1f"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="18" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#000" flood-opacity=".45"/>
+    </filter>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#bg)"/><g transform="translate(92 92) scale(0.82)">
+  <circle cx="512" cy="480" r="420" fill="url(#halo)"/>
+  <!-- орбита -->
+  <ellipse cx="512" cy="512" rx="372" ry="372" fill="none" stroke="#3dd6f5" stroke-opacity=".22" stroke-width="10" stroke-dasharray="6 26"/>
+  <!-- лист -->
+  <g filter="url(#shadow)">
+    <path d="M512 150 C 760 250, 830 470, 760 640 C 700 790, 560 860, 512 874 C 464 860, 324 790, 264 640 C 194 470, 264 250, 512 150 Z" fill="url(#leaf)"/>
+    <path d="M512 190 L512 840" stroke="#065f46" stroke-opacity=".35" stroke-width="14" stroke-linecap="round"/>
+    <path d="M512 150 C 760 250, 830 470, 760 640 C 700 790, 560 860, 512 874" fill="#ffffff" fill-opacity=".10"/>
+  </g>
+  <!-- молния -->
+  <g filter="url(#glow)">
+    <path d="M560 230 L360 560 L492 560 L452 800 L676 450 L540 450 L600 230 Z" fill="url(#bolt)" stroke="#fff3b0" stroke-width="10" stroke-linejoin="round"/>
+  </g>
+  <circle cx="742" cy="270" r="14" fill="#fff" opacity=".85"/>
+  <circle cx="290" cy="760" r="9" fill="#a3e635" opacity=".9"/>
+</g></svg>
