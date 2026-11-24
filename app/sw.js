@@ -1,7 +1,7 @@
 /* Service worker: приложение работает без интернета */
-const CACHE = "ecoquat-v1";
+const CACHE = "ecoquat-v2";
 const FILES = [
-  "./", "./index.html", "./manifest.webmanifest", "./css/styles.css", "./js/data.js", "./js/app.js",
+  "./", "./index.html", "./manifest.webmanifest", "./css/styles.css", "./js/data.js", "./js/i18n.js", "./js/app.js",
   "./icons/icon-96.png", "./icons/icon-180.png", "./icons/icon-192.png", "./icons/icon-512.png",
   "./icons/maskable-192.png", "./icons/maskable-512.png",
 ];

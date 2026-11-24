@@ -89,7 +89,8 @@ button, input, select { font-family: inherit; }
 .topbar { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 22px; }
 .topbar h1 { margin: 0; font-size: 28px; letter-spacing: -.3px; }
 .topbar p { margin: 4px 0 0; color: var(--muted); font-size: 14px; }
-.top-actions { display: flex; gap: 10px; }
+.top-actions { display: flex; gap: 10px; align-items: center; }
+.lang-seg button { padding: 8px 12px; font-size: 12.5px; letter-spacing: .5px; }
 .icon-btn { width: 44px; height: 44px; border-radius: 14px; border: 1px solid var(--line); background: var(--card);
   color: var(--text); display: grid; place-items: center; cursor: pointer; transition: .2s; backdrop-filter: blur(10px); }
 .icon-btn:hover { border-color: var(--line2); color: var(--amber); }
@@ -307,6 +308,9 @@ a { color: var(--cyan); }
   .sidebar { display: none; }
   .main { padding: 18px 14px 110px; }
   .topbar h1 { font-size: 22px; }
+  .topbar { align-items: flex-start; }
+  .topbar p { display: none; }
+  .icon-btn { width: 40px; height: 40px; }
   .g2, .g3 { grid-template-columns: 1fr; }
   .span2 { grid-column: auto; }
   .hero-main .big { font-size: 38px; }
